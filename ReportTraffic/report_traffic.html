@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="report_traffic.css">
+    <!-- <link rel="stylesheet" href="report_traffic.css"> -->
     <title>Document</title>
+    <style>
+        .sty{
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
-    <h3>Report Traffic</h3>
+    
+    <h2 class = "sty"  style="text-align: center;">Report Traffic</h2>
     <!-- <form > -->
         <fieldset>
-                <legend>Traffic Details:</legend>
-                <p>Traffic Level:</p>
-                <input id="level" type="text" name="level" placeholder="Medium">
+                <legend class = "sty">Traffic Details:</legend>
+                <p class = "sty">Traffic Level:</p>
+
+                <select id = "level">
+                        <option value="LOW">LOW</option>
+                        <option value="MEDIUM">MEDIUM</option>
+                        <option value="HIGH">HIGH</option>
+                </select>
+                <!-- <input id="level" type="text" name="level" placeholder="Medium"> -->
                 <br>
-                <p>Select Your Location:</p>
+                <p class = "sty">Select Your Location:</p>
                 <input id="location" type="text" name="location" placeholder="Vellore">
                 <br>
-                <p>or</p>
+                <p class = "sty">or</p>
                 <button id= "geoLocation">Take Current Location</button>
                 <br>
                 <hr>

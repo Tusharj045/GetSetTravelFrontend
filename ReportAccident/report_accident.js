@@ -1,4 +1,4 @@
-console.log("connected");
+
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -14,7 +14,7 @@ function showPosition(position) {
         var placeVal = res.data
         document.getElementById('location').value = placeVal
     }).catch((err)=>{
-        console.log(err)
+
     })
     
   }
@@ -30,8 +30,8 @@ document.querySelector("#report").addEventListener('click',(e)=>{
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let traffic = { date: date, time:time, place:location, level:level}
     axios.post("http://localhost:3000/accident", traffic).then((res)=>{
-        console.log(res.data)
+    
     }).catch((err)=>{
-        console.log(err)
+    
     })
 })
